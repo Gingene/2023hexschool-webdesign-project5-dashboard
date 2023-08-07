@@ -1,12 +1,14 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-const panelList = document.querySelector("#panelList");
+panelActive();
 
-console.dir(panelList);
-console.log(getCurrentFileName());
+if (getCurrentFileName() === "index.html") {
+  editModeF();
+}
 
 function panelActive() {
+  const panelList = document.querySelector("#panelList");
   if (getCurrentFileName() === "index.html") {
     panelList.children[2].firstElementChild.classList.add("link-success");
     panelList.children[2].firstElementChild.classList.remove("link-dark");
@@ -24,14 +26,6 @@ function panelActive() {
     panelList.children[2].firstElementChild.classList.add("link-dark");
   }
 }
-
-panelActive();
-
-if (getCurrentFileName() === "index.html") {
-  editModeF();
-}
-
-console.log(panelList.children[2].firstElementChild);
 
 function getCurrentFileName() {
   let path = window.location.pathname;
