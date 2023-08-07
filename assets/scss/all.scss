@@ -1,0 +1,33 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+// @import "./utils/custom";
+
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+@import "./pages/index.scss";
+
+@import "../../node_modules/bootstrap";
+@import "./base/base";
+// @import "./helpers/utilities";
+
+// @import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "./utils/container";
+
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.rounded-0-125 {
+  border-radius: 0.125rem !important;
+}
+
+.g-icon {
+  font-family: "Material Icons";
+}
+
+.f-rb {
+  font-family: "Roboto Mono", monospace;
+}
