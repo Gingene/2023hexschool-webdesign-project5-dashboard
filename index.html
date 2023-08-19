@@ -15,14 +15,14 @@
   href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
   rel="stylesheet"
 />
-    <script type="module" crossorigin src="/2023hexschool-webdesign-project5-dashboard/assets/main-bafd81db.js"></script>
-    <link rel="stylesheet" href="/2023hexschool-webdesign-project5-dashboard/assets/main-c33fa7e9.css">
+    <script type="module" crossorigin src="/2023hexschool-webdesign-project5-dashboard/assets/main-d55b13e1.js"></script>
+    <link rel="stylesheet" href="/2023hexschool-webdesign-project5-dashboard/assets/main-e87f7d74.css">
   </head>
   <body>
-    <div class="wrap d-flex">
-      <div
-  class="panel bg-light main-container d-flex flex-column justify-content-between"
+    <div
+  class="panel bg-light main-container d-flex flex-column justify-content-between position-fixed vh-100"
   style="width: 296px"
+  data-aos="fade-right"
 >
   <div>
     <div class="logo mb-45">
@@ -46,8 +46,13 @@
           <span> Question </span>
         </a>
       </li>
-      <li class="mx-n45 px-45">
-        <a href="index.html" class="d-flex link-dark fw-bold mb-4">
+      <li
+        class="mx-n45 px-45 border-start border-4 border-success"
+      >
+        <a
+          href="index.html"
+          class="d-flex fw-bold mb-4 link-success"
+        >
           <span class="material-icons me-3"> assignment </span>
           <span> Assignment </span>
         </a>
@@ -58,8 +63,13 @@
           <span> Course </span>
         </a>
       </li>
-      <li class="mx-n45 px-45">
-        <a href="Admin.html" class="d-flex link-dark fw-bold mb-4">
+      <li
+        class="mx-n45 px-45 "
+      >
+        <a
+          href="Admin.html"
+          class="d-flex fw-bold mb-4 link-dark"
+        >
           <span class="material-icons me-3"> group </span>
           <span> Admin </span>
         </a>
@@ -86,52 +96,67 @@
     </div>
   </div>
 </div>
-      <main class="main-container" style="width: 984px">
-        <nav class="d-flex align-items-center">
-          <h2 class="fw-bold fs-4 mb-0 me-52">Assignment</h2>
-          <ul
-            class="list-unstyled d-flex w-100 justify-content-between align-items-center mb-0"
+    <main
+      class="main-container"
+      style="width: 984px; margin-left: 296px"
+      data-aos="fade-down"
+    >
+      <nav class="d-flex align-items-center">
+        <h2 class="fw-bold fs-4 mb-0 me-52">Assignment</h2>
+        <div
+          class="list-unstyled d-flex w-100 justify-content-between align-items-center mb-0"
+        >
+          <div>
+            <a
+              class="link-dark d-flex"
+              href="#"
+              id="allCoursebtn"
+              role="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#allsection"
+              aria-expanded="true"
+            >
+              All Course
+              <span class="material-icons ms-2"> expand_more </span>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="link-dark d-inline-block me-4">
+              <span class="material-icons"> search </span>
+            </a>
+            <a href="#" class="link-dark d-inline-block me-4">
+              <span class="material-icons"> notifications_active </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div id="allsection" class="collapse show">
+        <div
+          class="status d-flex justify-content-between align-items-center mb-1"
+        >
+          <button
+            class="btn link-dark d-flex align-items-center"
+            type="button"
+            id="mainListBtn"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainList"
+            aria-expanded="true"
           >
-            <li class="nav-item">
-              <a
-                class="nav-link link-dark d-flex"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                All Course
-                <span class="material-icons ms-2"> expand_more </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="link-dark d-inline-block me-4">
-                <span class="material-icons"> search </span>
-              </a>
-              <a href="#" class="link-dark d-inline-block me-4">
-                <span class="material-icons"> notifications_active </span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="status d-flex justify-content-between mb-1">
-          <a href="" class="link-dark d-flex align-items-center">
             All(4) <span class="material-icons ms-2">expand_more</span>
-          </a>
+          </button>
           <span class="fs-8 text-secondary">2 comments</span>
         </div>
-        <div class="main" aria-labelledby="navbarDropdown">
+        <div class="main">
           <div class="row">
             <div class="col-4">
-              <ul class="list-unstyled">
+              <ul class="list-unstyled collapse show" id="mainList">
                 <li class="bg-light border p-25">
                   <a href="#" class="link-dark">
-                    <h3
+                    <h1
                       class="fs-8 d-flex justify-content-between align-items-center mb-1"
                     >
                       Chapter Assignment 2 <span>4 hrs ago</span>
-                    </h3>
+                    </h1>
                     <p
                       class="fw-bold d-flex justify-content-between align-items-center mb-0"
                     >
@@ -231,7 +256,7 @@
                       class="bg-light d-flex align-items-center border px-25 py-2"
                     >
                       <span class="material-icons me-2"> attach_file </span>
-                      <span class="fw-bold">HW-2-David.zip</span>
+                      <button class="fw-bold border-0">HW-2-David.zip</button>
                     </div>
                   </div>
                 </div>
@@ -262,17 +287,14 @@
                       <br />
                       <ul>
                         <li>
-                          adjust
-                          <span class="f-rb text-success"
-                            >the vertical-align</span
-                          >
+                          adjust the
+                          <code class="f-rb">vertical-align</code>
                           of the image to position it elsewhere (e.g. the middle
                           ) or
                         </li>
                         <li>
                           change the
-                          <span class="f-rb text-success">display</span> so it
-                          isn’tinline.
+                          <code class="f-rb">display</code> so it isn’tinline.
                         </li>
                       </ul>
                     </div>
@@ -371,22 +393,27 @@
           <div>
             <button
               type="button"
-              class="btn btn-outline-success px-45 me-3 rounded-0-125"
+              class="btn btn-outline-success px-45 me-3 rounded-ms"
             >
               Mark as read
             </button>
             <button
               type="button"
-              class="btn btn-outline-success rounded-0-125"
+              class="btn btn-outline-success rounded-ms"
               id="editBtn"
             >
               Reply
             </button>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
     
   </body>
 </html>
