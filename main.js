@@ -1,7 +1,7 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-panelActive();
+// panelActive();
 
 if (getCurrentFileName() === "index.html") {
   editModeF();

@@ -585,8 +585,9 @@ $utilities: map-merge(
           monospace: var(--#{$prefix}font-monospace),
         ),
       ),
-    "font-size": (
-      rfs: true,
+    "font-size1": (
+      rfs: false,
+      responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes,
@@ -816,7 +817,7 @@ $utilities: map-merge(
     ),
     // scss-docs-end utils-interaction
     // scss-docs-start utils-border-radius
-    "rounded":
+    "rounded1":
       (
         property: border-radius,
         class: rounded,
@@ -830,7 +831,7 @@ $utilities: map-merge(
           5: var(--#{$prefix}border-radius-xxl),
           circle: 50%,
           pill: var(--#{$prefix}border-radius-pill),
-          ms: var(--#{$prefix}border-radius-xl),
+          ms: var(--#{$prefix}border-radius-05),
         ),
       ),
     "rounded-top": (

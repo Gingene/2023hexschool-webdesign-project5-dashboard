@@ -1,6 +1,7 @@
 <div
-  class="panel bg-light main-container d-flex flex-column justify-content-between"
+  class="panel bg-light main-container d-flex flex-column justify-content-between position-fixed vh-100"
   style="width: 296px"
+  data-aos="fade-right"
 >
   <div>
     <div class="logo mb-45">
@@ -24,8 +25,13 @@
           <span> Question </span>
         </a>
       </li>
-      <li class="mx-n45 px-45">
-        <a href="index.html" class="d-flex link-dark fw-bold mb-4">
+      <li
+        class="mx-n45 px-45 <%= page === 'index' ? 'border-start border-4 border-success' : '' %>"
+      >
+        <a
+          href="index.html"
+          class="d-flex fw-bold mb-4 <%= page === 'index' ? 'link-success' : 'link-dark' %>"
+        >
           <span class="material-icons me-3"> assignment </span>
           <span> Assignment </span>
         </a>
@@ -36,8 +42,13 @@
           <span> Course </span>
         </a>
       </li>
-      <li class="mx-n45 px-45">
-        <a href="Admin.html" class="d-flex link-dark fw-bold mb-4">
+      <li
+        class="mx-n45 px-45 <%= page === 'Admin' ? 'border-start border-4 border-success' : '' %>"
+      >
+        <a
+          href="Admin.html"
+          class="d-flex fw-bold mb-4 <%= page === 'Admin' ? 'link-success' : 'link-dark' %>"
+        >
           <span class="material-icons me-3"> group </span>
           <span> Admin </span>
         </a>

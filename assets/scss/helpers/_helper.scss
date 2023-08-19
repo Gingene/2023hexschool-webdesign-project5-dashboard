@@ -14,3 +14,19 @@
 .f-rb {
   font-family: "Roboto Mono", monospace;
 }
+
+.more {
+  display: none;
+}
+
+.collapsed.more {
+  display: inline-block;
+}
+
+.less {
+  display: inline-block;
+}
+
+.collapsed.less {
+  display: none;
+}
